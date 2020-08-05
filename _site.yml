@@ -1,0 +1,9 @@
+name: "geog176A_2020"
+output_dir: "."
+navbar:
+  title: "Chi Zhang Needcola"
+  left:
+    - text: "home"
+      href: index.html
+    - text: "GIS Work"
+      href: geog176A.html
