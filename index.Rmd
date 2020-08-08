@@ -1,0 +1,12 @@
+---
+title: "About me"
+---
+
+
+<center>
+# Hi, I'm Chi Zhang
+<center>
+
+I am student in University of California, Santa Barbara. I major in Geographic Information Science. Geography is an amazing subject, which triggers my enthusiasm of understanding our earth. I wish I can keep my passion on the Geography.
+
+![](../img/NFAD8251.jpeg)
