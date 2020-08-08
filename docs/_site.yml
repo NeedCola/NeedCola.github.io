@@ -9,10 +9,12 @@ navbar:
     - text: "GIS Work"
       icon: fa-rocket
       href: geog176A.html
+    - text: "My resume"
+      icon: fa-arrow-alt-circle-right
+      href: chizhang.html
   right:
     - icon: fa-github
       href: https://github.com/NeedCola/geog176A_2020
 output:
   html_document:
     theme: sandstone
-    
