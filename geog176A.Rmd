@@ -7,6 +7,6 @@ In the summer of 2020, I made the first project in the Geographic Information Sc
 
 ## [Geog176A_2020](https://needcola.github.io/index.html)
 
-- In this project we built a personal website with Github Pages
-- Includes a github repo for access to all the code
-- Look at how high quality my work is!
+- I began to be familiar with R and Rstudio: what the basic logic is, and how to use it.
+- I can create a brief personal website using R and Github, that everyone visits it online easily.
+- Make a good start on Geographic Information Science! 
