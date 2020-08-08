@@ -5,7 +5,7 @@ title: "Geog176A_2020_Lab01"
 
 In the summer of 2020, I made the first project in the Geographic Information Science class using R. I wrote some code for some awesome GIS project. Here is a collection of links!
 
-## [Geog176A_2020](https://github.com/NeedCola/NeedCola.github.io)
+## [Geog176A_2020](https://needcola.github.io/index.html)
 
 - In this project we built a personal website with Github Pages
 - Includes a github repo for access to all the code
