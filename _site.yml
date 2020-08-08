@@ -14,7 +14,7 @@ navbar:
       href: chizhang.html
   right:
     - icon: fa-github
-      href: https://github.com/NeedCola/geog176A_2020
+      href: https://github.com/NeedCola
 output:
   html_document:
     theme: sandstone
