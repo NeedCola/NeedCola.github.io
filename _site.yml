@@ -13,7 +13,8 @@ navbar:
       icon: fa-arrow-alt-circle-right
       href: chizhang.html
   right:
-    - icon: fa-github
+    - text: My Github
+      icon: fa-github
       href: https://github.com/NeedCola
 output:
   html_document:
