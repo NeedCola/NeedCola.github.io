@@ -18,7 +18,7 @@ title: "Geog176A_2020_Lab02"
 
 In the lab02, I worked with COVID-19 data in US, monitoring California's daily new cases, ploting 4 interesting states' changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.
 
-##[COVID-19 Data Wrangling](https://needcola.github.io/geog176A-labs/lab-02.html)
+## [COVID-19 Data Wrangling](https://needcola.github.io/geog176A-labs/lab-02.html)
 
 - I was familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and ploting, combination of raw data, and extracting the variables from raw data.
 - In the COVID-19 data wrangling, I started to realize the relationship among data. Data will be influenced by other variables, chronologically and spatially. 
