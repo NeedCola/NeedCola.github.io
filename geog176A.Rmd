@@ -1,5 +1,5 @@
 ---
-title: "Geog176A_2020_Lab01"
+title: "Geog176A_2020_Labs"
 ---
 
 
@@ -11,10 +11,8 @@ In the summer of 2020, I made the first project in the Geographic Information Sc
 - I can create a brief personal website using R and Github, that everyone visits it online easily.
 - Make a good start on Geographic Information Science! 
 
+---
 
----
-title: "Geog176A_2020_Lab02"
----
 
 In the lab02, I worked with COVID-19 data in US, monitoring California's daily new cases, ploting 4 interesting states' changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.
 
