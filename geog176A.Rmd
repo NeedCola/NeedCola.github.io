@@ -14,12 +14,20 @@ In the summer of 2020, I made the first project in the Geographic Information Sc
 ---
 
 
-In the lab02, I worked with COVID-19 data in US, monitoring California's daily new cases, ploting 4 interesting states' changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.
+In the lab02, I worked with COVID-19 data in US, monitoring California's daily new cases, plotting 4 interesting states' changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.
 
 ## [COVID-19 Data Wrangling](https://needcola.github.io/geog176A-labs/lab-02.html)
 
-- I was familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and ploting, combination of raw data, and extracting the variables from raw data.
+- I was familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and plotting, combination of raw data, and extracting the variables from raw data.
 - In the COVID-19 data wrangling, I started to realize the relationship among data. Data will be influenced by other variables, chronologically and spatially. 
-- The sturcture of the code is important too. Well-structured code is easier to debug and present.
+- The structure of the code is important too. Well-structured code is easier to debug and present.
 
+---
 
+In the lab03, I figured out the geographic relationship between US cities and borders of national, states, and near countries. Then I evaluated the 100-mile Border Zone described in [ACLU article](https://www.aclu.org/other/constitution-100-mile-border-zone).
+
+## [Distance and Projection](https://needcola.github.io/geog176A-labs/lab-03.html)
+
+-I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.
+-In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.
+-And I can plot clear map with distance data by ggplot.
