@@ -28,6 +28,6 @@ In the lab03, I figured out the geographic relationship between US cities and bo
 
 ## [Distance and Projection](https://needcola.github.io/geog176A-labs/lab-03.html)
 
--I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.
--In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.
--And I can plot clear map with distance data by ggplot.
+- I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.
+- In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.
+- And I can plot clear map with distance data by ggplot.
