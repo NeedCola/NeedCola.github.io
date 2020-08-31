@@ -31,3 +31,17 @@ In the lab03, I figured out the geographic relationship between US cities and bo
 - I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.
 - In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.
 - And I can plot clear map with distance data by ggplot.
+
+---
+
+In the lab04, I started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, I tried to find the relationship between the dam distribution and geographic information. 
+
+## [Tesselations, Point-in-Polygon](https://needcola.github.io/geog176A-labs/lab04.html)
+
+- In the lab04, I understand how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes. 
+- I analyze the dams data in the United States with the voronoi tessellation, defining the numbers of dam in each tiles. With the distribution of different types, I demonstrate the possible reasons of the distribution.
+- And the leaflet map also be drawn, showing in largest and high_hazard dam in each state with Mississippi River System.
+
+
+
+
