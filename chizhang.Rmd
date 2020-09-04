@@ -6,14 +6,37 @@ title: "Chi Zhang"
 ---
 
 ### EDUCATION
-* B.A Environment Studies in University of California, Santa Barbara. **2014-2017**
+* B.S Environment Studies in University of California, Santa Barbara. **2017-2018**
 
 * B.A Geographic Information Science in University of California, Santa Barbara. **2018-PRESENT**
 
+---
+
 ### EXPERIENCE
-* Geologic Field Trip in Santa Ynetz, **2015**
-* Art Project of spatial vision, **2016**
-* Internship of Environmental Science in Shanghai, China, **2018**
+
+* ####	Geologic Field Trip, UC Santa Barbara. **2017** 
+1. Rock type and texture analysis in Santa Ynez.
+2. Definition of the plate tectonic evolution around Santa Ynez area.
+* ####	Internship of Geographic Information Science, Tongji University, Shanghai. **2018 summer**
+1. Data Gathering of the city metro traffic and population flow in Shanghai.
+2. Relative analysis of the data, with ArcGIS and python, measuring the correspondence between data and calculating the isochrone   of each line in particular business area.
+3. Design of a proper program frame for subsequent data analysis. 
+
+---
+
+### ACTIVITIES
+
+* ####	Art project on the spatial vision, UC Santa Barbara. **2017**
+1. Creation of the spatial art design conducted by natural element, such as light, water and wind.
+2. Sculpture of one part of human’s body.
+* ####	Adventure Program of climbing, UC Santa Barbara. **2018**
+1. Climbing on Lizard Mouth Rock with grouped members in Santa Ynez.
+
+---
+
+### LANGUAGE SKILLS
+
+* #### Computer Languages&Software: R, Python, ArcGIS
 
 ---
 
