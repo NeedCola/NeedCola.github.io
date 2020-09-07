@@ -38,10 +38,18 @@ In the lab04, I started to analyze the geographic points in the polygon, with th
 
 ## [Tesselations, Point-in-Polygon](https://needcola.github.io/geog176A-labs/lab04.html)
 
-- In the lab04, I understand how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes. 
+- I understand how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes. 
 - I analyze the dams data in the United States with the voronoi tessellation, defining the numbers of dam in each tiles. With the distribution of different types, I demonstrate the possible reasons of the distribution.
 - And the leaflet map also be drawn, showing in largest and high_hazard dam in each state with Mississippi River System.
 
+---
 
+In the lab05, we learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.
 
+## [Raster and Remote Sensing](https://needcola.github.io/geog176A-labs/lab05.html)
 
+- First time I deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.
+- In the case of Palo, I use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers. 
+- And I extracted a specific location captured by the drone from layers to define its value in the raster data.
+
+---
