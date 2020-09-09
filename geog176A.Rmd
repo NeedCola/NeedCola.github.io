@@ -5,7 +5,7 @@ title: "Geog176A_2020_Labs"
 
 In the summer of 2020, I made the first project in the Geographic Information Science class using R. I wrote some code for some awesome GIS project. Here is a collection of links!
 
-## [Geog176A_2020](https://needcola.github.io/index.html)
+# [Geog176A_2020](https://needcola.github.io/index.html)
 
 - I began to be familiar with R and Rstudio: what the basic logic is, and how to use it.
 - I can create a brief personal website using R and Github, that everyone visits it online easily.
@@ -13,43 +13,54 @@ In the summer of 2020, I made the first project in the Geographic Information Sc
 
 ---
 
-
 In the lab02, I worked with COVID-19 data in US, monitoring California's daily new cases, plotting 4 interesting states' changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.
 
-## [COVID-19 Data Wrangling](https://needcola.github.io/geog176A-labs/lab-02.html)
+# [COVID-19 Data Wrangling](https://needcola.github.io/geog176A-labs/lab-02.html)
 
 - I was familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and plotting, combination of raw data, and extracting the variables from raw data.
 - In the COVID-19 data wrangling, I started to realize the relationship among data. Data will be influenced by other variables, chronologically and spatially. 
 - The structure of the code is important too. Well-structured code is easier to debug and present.
 
+Here is my highlight in the project:
+![](img/lab2highlight.png)
+
 ---
 
 In the lab03, I figured out the geographic relationship between US cities and borders of national, states, and near countries. Then I evaluated the 100-mile Border Zone described in [ACLU article](https://www.aclu.org/other/constitution-100-mile-border-zone).
 
-## [Distance and Projection](https://needcola.github.io/geog176A-labs/lab-03.html)
+# [Distance and Projection](https://needcola.github.io/geog176A-labs/lab-03.html)
 
 - I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.
 - In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.
 - And I can plot clear map with distance data by ggplot.
 
+Here is my highlight in the project:
+![](img/lab3highlight.png)
+
 ---
 
 In the lab04, I started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, I tried to find the relationship between the dam distribution and geographic information. 
 
-## [Tesselations, Point-in-Polygon](https://needcola.github.io/geog176A-labs/lab04.html)
+# [Tesselations, Point-in-Polygon](https://needcola.github.io/geog176A-labs/lab04.html)
 
 - I understand how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes. 
 - I analyze the dams data in the United States with the voronoi tessellation, defining the numbers of dam in each tiles. With the distribution of different types, I demonstrate the possible reasons of the distribution.
 - And the leaflet map also be drawn, showing in largest and high_hazard dam in each state with Mississippi River System.
 
+Here is my highlight in the project:
+![](img/lab4highlight.png)
+
 ---
 
 In the lab05, we learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.
 
-## [Raster and Remote Sensing](https://needcola.github.io/geog176A-labs/lab05.html)
+# [Raster and Remote Sensing](https://needcola.github.io/geog176A-labs/lab05.html)
 
 - First time I deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.
 - In the case of Palo, I use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers. 
 - And I extracted a specific location captured by the drone from layers to define its value in the raster data.
+
+Here is my highlight in the project:
+![](img/lab5highlight.png)
 
 ---
