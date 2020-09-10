@@ -14,7 +14,7 @@ title: "Chi Zhang"
 
 ### EXPERIENCE
 
-* ####	Internship of Geographic Information Science, Tongji University, Shanghai. **2018 summer**
+* ####	Internship in Geographic Information Science, Tongji University, Shanghai. **2018 summer**
 1. Data Gathering of the city metro traffic and population flow in Shanghai.
 2. Relative analysis of the data, with ArcGIS and python, measuring the correspondence between data and calculating the isochrone   of each line in a particular business area.
 3. Design of a proper program frame for subsequent data analysis. 
