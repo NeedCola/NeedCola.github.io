@@ -13,7 +13,7 @@ I am student in University of California, Santa Barbara. I major in Geographic I
 
  In Geographic information Science, data analysis is the main method to deal with the geographic information, such as changes of local land-form features, climates, populations, etc. From data wrangling and construction, we can seek more information we need in mass data, structured or unstructured.
 
- With R project, I work on the data analysis of COVID-19, projection, tessellations, raster, and terrain. For details please click **GIS WORK** above!
+ With R project, I work on the data analysis. For details please click **GIS WORK** above!
 
  Contact me: chizhang@ucsb.edu
  My github: https://github.com/NeedCola
