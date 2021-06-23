@@ -1,0 +1,14 @@
+---
+title: "Geo13_2021_Labs"
+---
+
+
+In the summer of 2021, I made the first project in the GIS programming class using R. I wrote some code for some awesome GIS project. Here is a collection of links!
+
+# [Geog13_2021](https://chizhang-geo13.github.io/index.html)
+
+- I began to be familiar with R and Rstudio: what the basic logic is, and how to use it.
+- I can create a brief personal website using R and Github, that everyone visits it online easily.
+- Make a good start on Geographic Information Science! 
+
+---
