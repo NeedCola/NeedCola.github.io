@@ -37,7 +37,7 @@ title: "Chi Zhang"
 
 ### LANGUAGE SKILLS
 
-* #### Computer Languages & Software: R, Python, ArcGIS
+* #### Computer Languages & Software: R, Python, ArcGIS Pro
 
 ---
 
