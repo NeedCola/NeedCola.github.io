@@ -22,4 +22,4 @@ In the **lab02**, I worked with COVID-19 data in US, monitoring California's dai
 - The structure of the code is important too. Well-structured code is easier to debug and present.
 
 Here is my highlight in the project:
-![](img/)
+![](img/geo13-lab02highlight.png)
