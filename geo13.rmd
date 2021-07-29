@@ -48,6 +48,26 @@ In the **lab04**, I started to analyze the geographic points in the polygon, wit
 
 Here is my highlight in the project:
 ![](img/geo13-lab04highlight.png)
+---
+
+In the **lab05**, we learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.
+
+# [Raster and Remote Sensing](https://needcola.github.io/geog-13-labs/lab-05.html)
+
+- First time I deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.
+- In the case of Palo, I use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers. 
+- And I extracted a specific location captured by the drone from layers to define its value in the raster data.
+
+Here is my highlight in the project:
+![](img/geo13-lab05highlight.png)
+
+
+
+
+
+
+
+
 
 
 
