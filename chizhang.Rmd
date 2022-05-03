@@ -6,18 +6,33 @@ title: "Chi Zhang"
 ---
 
 ### EDUCATION
-* #### B.A. Geographic Information Science in University of California, Santa Barbara. **2018-PRESENT**
+* #### B.A. Geographic Information Science in University of California, Santa Barbara. **2019-PRESENT**
 
-* #### B.S. Environment Studies in University of California, Santa Barbara. **2017-2018**
 
 ---
 
 ### EXPERIENCE
+* ####  More R spatial analysis experience in GEO 13, UC Santa Barbara. **2021**
+1. Familiar with spatial calculation, tessellations. Dealing with raster data model.
 
-* ####	Internship in Geographic Information Science, Tongji University, Shanghai. **2018 summer**
-1. Data Gathering of the city metro traffic and population flow in Shanghai.
-2. Relative analysis of the data, with ArcGIS and python, measuring the correspondence between data and calculating the isochrone   of each line in a particular business area.
-3. Design of a proper program frame for subsequent data analysis. 
+2. Finishing a flood risk map in Mission Creek, Santa Barbara.
+
+3. Completing personal github website, posting all the GIS work on it.
+
+* ####  Group project and UCSB GIS meeting, UC Santa Barbara. **2021**
+1. Group working with spatial and data analysis between motor vehicle collisions and Socio-Economic Factors in LA.
+
+2. Solely finishing the data gathering: Road system from OSMnx by Python, Census data from Tidycensus by R, collision data from city’s geohub. Completing the spatial analysis by ArcGIS using linear reference.
+
+3. Joining UCSB GIS Meeting 2021 as a group. Reporting the spatial analysis both in the poster and paper.
+
+* ####  First contact with R, UC Santa Barbara. **2020**
+1. Basic logic in R and data analysis with packages, such as plotting, combination of raw data, and extraction of variables.
+
+* ####	Internship in Geographic Information Science, Tongji University, Shanghai. **2018**
+1. Learning to data gathering of the city metro traffic and population flow in Shanghai.
+
+2. Studying design of a proper program frame for subsequent data analysis. 
 
 * ####	Geologic Field Trip, UC Santa Barbara. **2017** 
 1. Rock type and texture analysis in Mount Santa Ynez.
@@ -37,7 +52,7 @@ title: "Chi Zhang"
 
 ### LANGUAGE SKILLS
 
-* #### Computer Languages & Software: R, Python, ArcGIS Pro
+* #### Computer Languages & Software: R, Python, ArcGIS Pro, QGIS, Xpress
 
 ---
 
