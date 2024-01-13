@@ -12,7 +12,7 @@ Welcome! This is my personal collaboration of GIS work based on the R script.
 
 In the **GIS Work 01**, I started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, I tried to find the relationship between the dam distribution and geographic information. 
 
-# [Tesselations, Point-in-Polygon](https://needcola.github.io/geog-13-labs/lab-04.html)
+# [Tesselations, Point-in-Polygon](https://needcola.github.io/giswork/lab-04.html)
 
 - Focus: understanding how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes. 
 - Achievements: 
@@ -27,7 +27,7 @@ Here is my highlight in the project:
 
 In the **GIS Work 02**, I use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.
 
-# [Raster and Remote Sensing](https://needcola.github.io/geog-13-labs/lab-05.html)
+# [Raster and Remote Sensing](https://needcola.github.io/giswork/lab-05.html)
 
 - Focus: manipulation of continuous data with raster data model, and mapping algebra to analyze elevation, precipitation, and climate.
 - Achievements: 
@@ -41,7 +41,7 @@ Here is my highlight in the project:
 
 In the **GIS Work 03**, terrain analysis is managed by R coding. Mission Creek's flood event in 2017 in Santa Barbara, California has been chosen as object, estimating the number of buildings impacted. In the project, I completed the whole analysis from collecting data to the assessment of impacts.
 
-# [Flood Risk in Mission Creek: Past, Present, Future](https://needcola.github.io/geog-13-labs/lab-06.html)
+# [Flood Risk in Mission Creek: Past, Present, Future](https://needcola.github.io/giswork/lab-06.html)
 
 - Focus: use OSM data to collect building centroids and the stream linestring, and process spatial analysis of flooding in the study area.
 - Achievements: 
