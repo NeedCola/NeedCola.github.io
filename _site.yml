@@ -11,7 +11,7 @@ navbar:
       href: geo13.html
     - text: "My resume"
       icon: fa-arrow-alt-circle-right
-      href: chizhang.html
+      href:
   right:
     - text: My Github
       icon: fa-github

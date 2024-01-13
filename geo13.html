@@ -11,10 +11,10 @@
 
 
 
-<title>Geo13_2021_Labs</title>
+<title>Chi Zhang’s GIS Work</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -257,13 +258,7 @@ $(document).ready(function () {
     GIS Work
   </a>
 </li>
-<li>
-  <a href="chizhang.html">
-    <span class="fa fa-arrow-alt-circle-right"></span>
-     
-    My resume
-  </a>
-</li>
+<li class="dropdown-header">My resume</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -282,76 +277,85 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Geo13_2021_Labs</h1>
+<h1 class="title toc-ignore">Chi Zhang’s GIS Work</h1>
 
 </div>
 
 
-<p>In the summer of 2021, I made the first project in the GIS programming class using R. I wrote some code for some awesome GIS project. Here is a collection of links!</p>
-<div id="geog13_2021" class="section level1">
-<h1><a href="https://needcola.github.io/index13.html">Geog13_2021</a></h1>
-<ul>
-<li>I began to be familiar with R and Rstudio: what the basic logic is, and how to use it.</li>
-<li>I can create a brief personal website using R and Github, that everyone visits it online easily.</li>
-<li>Make a good start on Geographic Information Science!</li>
-</ul>
+<p>Welcome! This is my personal collaboration of GIS work based on the R
+script.</p>
 <hr />
-<p>In the <strong>lab02</strong>, I worked with COVID-19 data in US, monitoring California’s daily new cases, plotting 4 interesting states’ changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.</p>
-</div>
-<div id="covid-19-data-wrangling" class="section level1">
-<h1><a href="https://needcola.github.io/geog-13-labs/lab-02.html">COVID-19 Data Wrangling</a></h1>
-<ul>
-<li>I was familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and plotting, combination of raw data, and extracting the variables from raw data.</li>
-<li>In the COVID-19 data wrangling, I started to realize the relationship among data. Data will be influenced by other variables, chronologically and spatially.</li>
-<li>The structure of the code is important too. Well-structured code is easier to debug and present.</li>
-</ul>
-<p>Here is my highlight in the project: <img src="img/geo13-lab02highlight.png" /></p>
-<hr />
-<p>In the <strong>lab03</strong>, I figured out the geographic relationship between US cities and borders of national, states, and near countries. Then I evaluated the 100-mile Border Zone described in <a href="https://www.aclu.org/other/constitution-100-mile-border-zone">ACLU article</a>.</p>
-</div>
-<div id="distances-and-the-border-zone" class="section level1">
-<h1><a href="https://needcola.github.io/geog-13-labs/lab-03.html">Distances and the Border Zone</a></h1>
-<ul>
-<li>I learned how to build sf objects from R packages and CSVs, using computer to program the projection which studied in the Geog w12.</li>
-<li>In the project, I understand the calculation of distance between geographic objects, such as point, line string and area.</li>
-<li>And I can plot clear map with distance data by ggplot.</li>
-</ul>
-<p>Here is my highlight in the project: <img src="img/geo13-lab03highlight.png" /></p>
-<hr />
-<p>In the <strong>lab04</strong>, I started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, I tried to find the relationship between the dam distribution and geographic information.</p>
-</div>
+<p>In the <strong>GIS Work 01</strong>, I started to analyze the
+geographic points in the polygon, with the functions defined by myself.
+With the raw data of dams in the United States, I tried to find the
+relationship between the dam distribution and geographic
+information.</p>
 <div id="tesselations-point-in-polygon" class="section level1">
-<h1><a href="https://needcola.github.io/geog-13-labs/lab-04.html">Tesselations, Point-in-Polygon</a></h1>
+<h1><a
+href="https://needcola.github.io/geog-13-labs/lab-04.html">Tesselations,
+Point-in-Polygon</a></h1>
 <ul>
-<li>I understand how the tessellation works. Each tessellation has its own advantages and disadvantages, and different attributes.</li>
-<li>I analyze the dams data in the United States with the voronoi tessellation, defining the numbers of dam in each tiles. With the distribution of different types, I demonstrate the possible reasons of the distribution.</li>
-<li>And the leaflet map also be drawn, showing in largest and high_hazard dam in each state with Mississippi River System.</li>
+<li>Focus: understanding how the tessellation works. Each tessellation
+has its own advantages and disadvantages, and different attributes.</li>
+<li>Achievements:</li>
+<li>Analysis of the dams’ data in the United States with different
+tessellation and identifying the difference among them, and define the
+numbers of dam in each tiles;</li>
+<li>With the distribution of different types, demonstrating the possible
+reasons of the distribution</li>
+<li>Generation of interactive leaflet map, which shows categorical data
+of dams in each state within Mississippi River System.</li>
 </ul>
-<p>Here is my highlight in the project: <img src="img/geo13-lab04highlight.png" /></p>
+<p>Here is my highlight in the project: <img
+src="img/geo13-lab04highlight.png" /></p>
 <hr />
-<p>In the <strong>lab05</strong>, we learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.</p>
+<p>In the <strong>GIS Work 02</strong>, I use raster layers to analyze
+the continuous data, a case of flooding in Palo, Iowa. We used the
+raster pacakge and raster data knowledge to create flood images using
+multiband Landsat Imagery, thresholding and classification methods.</p>
 </div>
 <div id="raster-and-remote-sensing" class="section level1">
-<h1><a href="https://needcola.github.io/geog-13-labs/lab-05.html">Raster and Remote Sensing</a></h1>
+<h1><a href="https://needcola.github.io/geog-13-labs/lab-05.html">Raster
+and Remote Sensing</a></h1>
 <ul>
-<li>First time I deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.</li>
-<li>In the case of Palo, I use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers.</li>
-<li>And I extracted a specific location captured by the drone from layers to define its value in the raster data.</li>
+<li>Focus: manipulation of continuous data with raster data model, and
+mapping algebra to analyze elevation, precipitation, and climate.</li>
+<li>Achievements:</li>
+<li>In the case of Palo, usage of kmean-rasters compared with Landsat
+band calculating the flooding cells shared by each layers</li>
+<li>Extraction of a specific location captured by the drone from layers
+to define its value in the raster data and presenting it on the
+interactive map</li>
 </ul>
-<p>Here is my highlight in the project: <img src="img/geo13-lab05highlight.png" /></p>
+<p>Here is my highlight in the project: <img
+src="img/geo13-lab05highlight.png" /></p>
 <hr />
-<p>In the <strong>lab06</strong>, terrain analysis is managed by R coding. We chose Mission Creek’s flood event in 2017 as object, estimating the number of buildings impacted. In the project, I completed the whole analysis from collecting data to the assessment of impacts.</p>
+<p>In the <strong>GIS Work 03</strong>, terrain analysis is managed by R
+coding. Mission Creek’s flood event in 2017 in Santa Barbara, California
+has been chosen as object, estimating the number of buildings impacted.
+In the project, I completed the whole analysis from collecting data to
+the assessment of impacts.</p>
 </div>
-<div id="flood-risk-in-mission-creek-past-present-future" class="section level1">
-<h1><a href="https://needcola.github.io/geog-13-labs/lab-06.html">Flood Risk in Mission Creek: Past, Present, Future</a></h1>
+<div id="flood-risk-in-mission-creek-past-present-future"
+class="section level1">
+<h1><a href="https://needcola.github.io/geog-13-labs/lab-06.html">Flood
+Risk in Mission Creek: Past, Present, Future</a></h1>
 <ul>
-<li>I use OSM data to collect building centroids and the stream linestring.</li>
-<li>with the whitebox, I create hillshade raster of Santa Barbara area and HAND raster for flooding cell values.</li>
-<li>The correcting of elevation is important in the data, which will impact the precision of analysis.</li>
-<li>In the final step, I overlay all raster layers into one, indicating the impacted buildings when the creek flooded.</li>
-<li>I also create a gif for Mission Creek’s flood inundation map library from 0 to 20 foot.</li>
+<li>Focus: use OSM data to collect building centroids and the stream
+linestring, and process spatial analysis of flooding in the study
+area.</li>
+<li>Achievements:</li>
+<li>with the whitebox, create hillshade raster of Santa Barbara area and
+HAND raster for flooding cell values.</li>
+<li>The correcting of elevation is important in the data, which will
+impact the precision of analysis.</li>
+<li>In the final step, overlay all raster layers into one, indicating
+the impacted buildings when the creek flooded.</li>
+<li>create a gif for Mission Creek’s flood inundation map library from 0
+to 20 foot.</li>
 </ul>
-<p>Here is my highlight in the project: <img src="img/geo13-lab06highlight.png" /></p>
+<p>Here is my highlight in the project: <img
+src="img/geo13-lab06highlight.png" /></p>
 </div>
 
 
