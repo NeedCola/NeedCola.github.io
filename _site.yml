@@ -9,7 +9,6 @@ navbar:
     - text: "GIS Work"
       icon: fa-rocket
       href: geo13.html
-
   right:
     - text: My Github
       icon: fa-github
