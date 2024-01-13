@@ -7,15 +7,16 @@ title: "About me"
 # Hi, I'm Chi Zhang
 <center>
 
-I am student in University of California, Santa Barbara. I major in Geographic Information Science. Geography is an amazing subject, which triggers my enthusiasm of understanding our earth. I wish I can keep my passion on the Geography.
+I am graduated from University of California, Santa Barbara, in the United States, majoring in Geographic Information Science. 
+Now I study in University of Sheffield in the United Kingdom as a graduate student in Applied Geographic Information System.
 
 ---
 
- In Geographic information Science, data analysis is the main method to deal with the geographic information, such as changes of local land-form features, climates, populations, etc. From data wrangling and construction, we can seek more information we need in mass data, structured or unstructured.
+ In Geographic information Science, data analysis is the main method to process the geospatial information, such as changes of local land-form features, climates, populations, etc. From data wrangling and construction, we can seek more information we need in mass data, structured or unstructured.
 
- With R project, I work on the data analysis. For details please click **GIS WORK** above!
+With R project, I work on the spatial data analysis. For details please click **GIS WORK** above!
 
- Contact me: chizhang@ucsb.edu
+ Contact me: czhang149@sheffield.ac.uk
  My github: https://github.com/NeedCola
 
 
