@@ -13,8 +13,8 @@
 
 <title>Chi Zhang</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,8 +32,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -172,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -181,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -234,7 +235,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -255,13 +256,6 @@ $(document).ready(function () {
     <span class="fa fa-rocket"></span>
      
     GIS Work
-  </a>
-</li>
-<li>
-  <a href="chizhang.html">
-    <span class="fa fa-arrow-alt-circle-right"></span>
-     
-    My resume
   </a>
 </li>
       </ul>
@@ -291,63 +285,99 @@ $(document).ready(function () {
 <div id="education" class="section level3">
 <h3>EDUCATION</h3>
 <ul>
-<li><h4 id="b.a.-geographic-information-science-in-university-of-california-santa-barbara.-2019-present">B.A. Geographic Information Science in University of California, Santa Barbara. <strong>2019-PRESENT</strong></h4></li>
+<li><h4 id="m.s.-applied-gis-in-university-of-sheffield.-2023-2024">M.S.
+Applied GIS in University of Sheffield.
+<strong>2023-2024</strong></h4></li>
+<li><h4
+id="b.a.-geographic-information-science-in-university-of-california-santa-barbara.-2018-2022">B.A.
+Geographic Information Science in University of California, Santa
+Barbara. <strong>2018-2022</strong></h4></li>
 </ul>
 <hr />
 </div>
 <div id="experience" class="section level3">
 <h3>EXPERIENCE</h3>
 <ul>
-<li><h4 id="more-r-spatial-analysis-experience-in-geo-13-uc-santa-barbara.-2021">More R spatial analysis experience in GEO 13, UC Santa Barbara. <strong>2021</strong></h4></li>
+<li><h4
+id="more-r-spatial-analysis-experience-in-geo-13-uc-santa-barbara.-2021">More
+R spatial analysis experience in GEO 13, UC Santa Barbara.
+<strong>2021</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li><p>Familiar with spatial calculation, tessellations. Dealing with raster data model.</p></li>
-<li><p>Finishing a flood risk map in Mission Creek, Santa Barbara.</p></li>
-<li><p>Completing personal github website, posting all the GIS work on it.</p></li>
+<li><p>Familiar with spatial calculation, tessellations. Dealing with
+raster data model.</p></li>
+<li><p>Finishing a flood risk map in Mission Creek, Santa
+Barbara.</p></li>
+<li><p>Completing personal github website, posting all the GIS work on
+it.</p></li>
 </ol>
 <ul>
-<li><h4 id="group-project-and-ucsb-gis-meeting-uc-santa-barbara.-2021">Group project and UCSB GIS meeting, UC Santa Barbara. <strong>2021</strong></h4></li>
+<li><h4
+id="group-project-and-ucsb-gis-meeting-uc-santa-barbara.-2021">Group
+project and UCSB GIS meeting, UC Santa Barbara.
+<strong>2021</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li><p>Group working with spatial and data analysis between motor vehicle collisions and Socio-Economic Factors in LA.</p></li>
-<li><p>Solely finishing the data gathering: Road system from OSMnx by Python, Census data from Tidycensus by R, collision data from city’s geohub. Completing the spatial analysis by ArcGIS using linear reference.</p></li>
-<li><p>Joining UCSB GIS Meeting 2021 as a group. Reporting the spatial analysis both in the poster and paper.</p></li>
+<li><p>Group working with spatial and data analysis between motor
+vehicle collisions and Socio-Economic Factors in LA.</p></li>
+<li><p>Solely finishing the data gathering: Road system from OSMnx by
+Python, Census data from Tidycensus by R, collision data from city’s
+geohub. Completing the spatial analysis by ArcGIS using linear
+reference.</p></li>
+<li><p>Joining UCSB GIS Meeting 2021 as a group. Reporting the spatial
+analysis both in the poster and paper.</p></li>
 </ol>
 <ul>
-<li><h4 id="first-contact-with-r-uc-santa-barbara.-2020">First contact with R, UC Santa Barbara. <strong>2020</strong></h4></li>
+<li><h4 id="first-contact-with-r-uc-santa-barbara.-2020">First contact
+with R, UC Santa Barbara. <strong>2020</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li>Basic logic in R and data analysis with packages, such as plotting, combination of raw data, and extraction of variables.</li>
+<li>Basic logic in R and data analysis with packages, such as plotting,
+combination of raw data, and extraction of variables.</li>
 </ol>
 <ul>
-<li><h4 id="internship-in-geographic-information-science-tongji-university-shanghai.-2018">Internship in Geographic Information Science, Tongji University, Shanghai. <strong>2018</strong></h4></li>
+<li><h4
+id="internship-in-geographic-information-science-tongji-university-shanghai.-2018">Internship
+in Geographic Information Science, Tongji University, Shanghai.
+<strong>2018</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li><p>Learning to data gathering of the city metro traffic and population flow in Shanghai.</p></li>
-<li><p>Studying design of a proper program frame for subsequent data analysis.</p></li>
+<li><p>Learning to data gathering of the city metro traffic and
+population flow in Shanghai.</p></li>
+<li><p>Studying design of a proper program frame for subsequent data
+analysis.</p></li>
 </ol>
 <ul>
-<li><h4 id="geologic-field-trip-uc-santa-barbara.-2017">Geologic Field Trip, UC Santa Barbara. <strong>2017</strong></h4></li>
+<li><h4 id="geologic-field-trip-uc-santa-barbara.-2017">Geologic Field
+Trip, UC Santa Barbara. <strong>2017</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
 <li>Rock type and texture analysis in Mount Santa Ynez.</li>
-<li>Definition of the plate tectonic evolution around Santa Ynez area.</li>
+<li>Definition of the plate tectonic evolution around Santa Ynez
+area.</li>
 </ol>
 <hr />
 </div>
 <div id="activities" class="section level3">
 <h3>ACTIVITIES</h3>
 <ul>
-<li><h4 id="adventure-program-of-climbing-uc-santa-barbara.-2018">Adventure Program of climbing, UC Santa Barbara. <strong>2018</strong></h4></li>
+<li><h4
+id="adventure-program-of-climbing-uc-santa-barbara.-2018">Adventure
+Program of climbing, UC Santa Barbara. <strong>2018</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li>Climbing on Lizard Mouth Rock with grouped members in Santa Ynez.</li>
+<li>Climbing on Lizard Mouth Rock with grouped members in Santa
+Ynez.</li>
 </ol>
 <ul>
-<li><h4 id="art-project-on-the-spatial-vision-uc-santa-barbara.-2017">Art project on the spatial vision, UC Santa Barbara. <strong>2017</strong></h4></li>
+<li><h4
+id="art-project-on-the-spatial-vision-uc-santa-barbara.-2017">Art
+project on the spatial vision, UC Santa Barbara.
+<strong>2017</strong></h4></li>
 </ul>
 <ol style="list-style-type: decimal">
-<li>Creation of the spatial art design conducted by a natural element, such as light, water and wind.</li>
+<li>Creation of the spatial art design conducted by a natural element,
+such as light, water and wind.</li>
 <li>Sculpture of one part of the human body.</li>
 </ol>
 <hr />
@@ -355,7 +385,9 @@ $(document).ready(function () {
 <div id="language-skills" class="section level3">
 <h3>LANGUAGE SKILLS</h3>
 <ul>
-<li><h4 id="computer-languages-software-r-python-arcgis-pro-qgis-xpress">Computer Languages &amp; Software: R, Python, ArcGIS Pro, QGIS, Xpress</h4></li>
+<li><h4
+id="computer-languages-software-r-python-arcgis-pro-qgis-xpress">Computer
+Languages &amp; Software: R, Python, ArcGIS Pro, QGIS, Xpress</h4></li>
 </ul>
 <hr />
 <p>TO BE CONTIUNED..</p>
